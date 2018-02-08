@@ -44,91 +44,20 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        <div class="col-md-4">                                
-                            <h3>Que es Gesticom?</h3>
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3>Que es Gesticom?</h3>
+                                </div>
+                            </div>
                             <p>Es una aplicación para la gestión de miembros de una asociación.</p>
                             <p></p>
                         </div>
-                        <div class="col-md-8">
-                            <ul>
-                                <li>Es una aplicación para la gestión de miembros de una asociación. </li>
-                                <li>Los programas de gestión sanitaria son inaccesibles a nivel académico. Con GESANE queremos simular la realidad de los centros de atención sanitaria para preparar mejor a los alumnos para que tengan una mejor integración profesional.</li>
-                            </ul>
-                            <h4>Para alumnos de Desarrollo de aplicaciones web...</h4>
-                            <ul>
-                                <li>Aprender a estructurar el diseño de un proyecto web</li>
-                                <li>Simular la creación de un proyecto complejo en un entorno de trabajo</li>
-                                <li>Participar de manera práctica en la creación de una aplicación web compleja</li>
-                            </ul>
-                            <h3>Si eres profesor/a de la família sanitaria puedes participar en el proyecto:</h3>
-                            <p>Ponte en contacto con Isabel Gimeno mediante email. Ella coordina la parte sanitaria del proyecto. Después de comprobar que eres profesor/a te crearemos una cuenta de docente para que puedas comenzar a utilizar la aplicación con tus alumnos.</p>
-                        </div>
-                    </div>
-                    <div class="row-fluid">
-
-                        <div class="col-md-3 col-md-offset-4">
+                        <div class="col-md-4">
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">Entra en el sistema</div>
                                 <div class="panel-body">
-                                    <div class="dropdown"  ng-if="debugging">
-                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                            Perfiles de prueba
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li class="dropdown-header">Administrador:</li>
-
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('rafael')">rafael</a></li>
-
-                                            <li class="dropdown-header">Coordinador:</li>
-
-                                            <li><a href="#" ng-if="debugging"   ng-click="fill('coordinadora')">coordinadora</a></li>
-                                            <li role="separator" class="divider"></li>
-
-                                            <li class="dropdown-header">Profesor:</li>
-
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('mariajose')">mariajose</a></li>
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('isabel')">isabel</a></li>
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('maria')">maria</a></li>
-
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Alumno mariajose:</li>
-
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('pepe')">pepe</a></li>
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('raquel')">raquel</a></li>
-                                            <li><a href="#"  ng-if="debugging"    ng-click="fill('carlos')">carlos</a></li>
-
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Alumno isabel:</li>
-
-                                            <li><a href="#" ng-if="debugging"    ng-click="fill('sergio')">sergio</a></li>
-                                            <li><a href="#" ng-if="debugging"    ng-click="fill('ana')">ana</a></li>
-
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Alumno maria:</li>
-
-                                            <li><a href="#" ng-if="debugging"    ng-click="fill('sandra')">sandra</a></li>
-                                            <li><a href="#" ng-if="debugging"    ng-click="fill('eva')">eva</a></li>
-
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Visitante:</li>
-
-                                            <li><a href="#" ng-if="debugging"    ng-click="fill('visitante')">visitante</a></li>                                                
-
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Registros de alumnos grupo maria josé:</li>
-
-                                            <li><a href="#" ng-if="debugging"    ng-click="fillRegistro('ausias-mariajose-2016-2017')">ausias-mariajose-2016-2017</a></li>
-
-                                            <li class="dropdown-header">Registros de alumnos grupo isabel:</li>
-                                            <li><a href="#" ng-if="debugging"    ng-click="fillRegistro('ausias-isabel-2016-2017')">ausias-isabel-2016-2017</a></li>
-                                            <li class="dropdown-header"> Registros de alumnos grupo maria:</li>
-
-                                            <li><a href="#" ng-if="debugging"    ng-click="fillRegistro('sagunto-maria-2016-2017')">sagunto-maria-2016-2017</a></li>
-                                            <li role="separator" class="divider"></li>
-                                        </ul>
-                                    </div>
                                     <br>
                                     <form name="form" ng-submit="login()" role="form">
                                         <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
@@ -152,3 +81,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
