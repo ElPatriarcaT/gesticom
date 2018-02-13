@@ -47,7 +47,11 @@
                 <!-- Administración ------------------------------------------- -->
                 <li class="dropdown" ng-if="mn.session_info.obj_tipousuario.data.id == 1"
                     ng-class="{'active': mn.isActive('/usuario') || mn.isActive('/tipousuario') || mn.isActive('/grupo') || mn.isActive('/curso') || mn.isActive('/centro/')}">
-                        
+                    <i class="fa fa-user-circle"></i>Usuario<span class="caret"></span>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-class="{ active: isActive('/generic/usuario/plist')}"><a href="generic/usuario/plist"> Usuarios</a></li>
+                        <li ng-class="{ active: isActive('/generic/tipousuario/plist')}"><a href="generic/tipousuario/plist">Tipo de Usuarios</a></li>
+                    </ul>
                 </li>
 
                 <!-- Coordinación -------------------------------------------
