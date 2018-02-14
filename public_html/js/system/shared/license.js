@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<!--
-<!--
 /*
  * Copyright (c) 2017 by Rafael Angel Aznar Aparici (rafaaznar at gmail dot com)
  *
@@ -28,36 +25,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
--->
-<menu></menu>
-<div id="wrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3"><menuperfil></menuperfil></div>
-             
-            <div class="col-md-9">
-                <div class="panel panel-default">
-                    <div class="panel-heading" style="font-family:Oswald , serif;">
-                        <div class="row">
-                            <div class="col-xs-9 text-left">
-                                <h1>Bienvenidos a GestiCom</h1>
-                            </div>
-                            <img src="images/logo1.png" class="img-responsive" align="right">
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-8">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3>Que es Gesticom?</h3>
-                                </div>
-                            </div>
-                            <p>Es una aplicación para la gestión de miembros de una asociación.</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+'use strict';
+moduloSistema.controller('LicenseController', ['$scope', '$routeParams', '$location', 'sessionService',
+    function ($scope, $routeParams, $location, sessionService) {
+
+        $scope.op = "License";
+        $scope.session_info = sessionService.getSessionInfo();
+        $scope.isSessionActive = sessionService.isSessionActive();
+    }
+]
+        );

@@ -1,0 +1,154 @@
+<style>
+    body { 
+        background-image: url("http://www.todopaisajes.com/1920x1080/luces-de-los-fuegos-artificiales.png");
+        background-size: auto;
+    }
+
+    /* Profile container */
+    .profile {
+
+    }
+
+    /* Profile sidebar */
+    .profile-sidebar {
+        padding: 20px 0 10px 0;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .profile-userpic img {
+        float: none;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+
+    .profile-usertitle {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .profile-usertitle-name {
+        color: #5a7391;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+    .profile-usertitle-job {
+        text-transform: uppercase;
+        color: #5b9bd1;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .profile-userbuttons {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .profile-userbuttons .btn {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 6px 15px;
+        margin-right: 5px;
+    }
+
+    .profile-userbuttons .btn:last-child {
+        margin-right: 0px;
+    }
+
+    .profile-usermenu {
+        margin-top: 30px;
+    }
+
+    .profile-usermenu ul li {
+        border-bottom: 1px solid #f0f4f7;
+    }
+
+    .profile-usermenu ul li:last-child {
+        border-bottom: none;
+    }
+
+    .profile-usermenu ul li a {
+        color: #93a3b5;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .profile-usermenu ul li a i {
+        margin-right: 8px;
+        font-size: 14px;
+    }
+
+    .profile-usermenu ul li a:hover {
+        background-color: #fafcfd;
+        color: #5b9bd1;
+    }
+
+    .profile-usermenu ul li.active {
+        border-bottom: none;
+    }
+
+    .profile-usermenu ul li.active a {
+        color: #5b9bd1;
+        background-color: #f6f9fb;
+        border-left: 2px solid #5b9bd1;
+        margin-left: -2px;
+    }
+
+    /* Profile Content */
+    .profile-content {
+        padding: 20px;
+        background: #fff;
+        min-height: 460px;
+        opacity: 0.5;
+
+    }
+</style>
+<div class="container">
+    <div class="row profile">
+        <div class="col-md-3">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img src="http://descargas.presidencia.gob.sv/FOTOS/_data/i/galleries/2015/DICIEMBRE_2015/SEMANA_DEL_1_AL_6_DICIEMBRE/FESTIVAL_BUEN_VIVIR_Y_GOBERNANDO_COLON/FBVC_17-me.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        Bienvenido, {{mn.session_info.login}} <br/>({{mn.session_info.obj_tipousuario.data.descripcion}})
+                    </div>
+                </div>
+
+                <div class="profile-usermenu">
+                    <ul class="nav" ng-if="mn.isSessionActive">
+                        <li>
+                            <a href="home">
+                                <i class="fa fa-fw fa-home"></i>
+                                Home </a>
+                        </li>
+                        <li>
+                            <a href="profile">
+                                <i class="fa fa-fw fa-user">
+                                </i> Perfil de usuario</a>
+                        </li>
+                        <li>
+                            <a href="passchange">
+                                <i class="fa fa-fw fa-key"></i> 
+                                Cambio de contraseña</a>
+                        </li>
+                        <li>
+                            <a href="logout">
+                                <i class="fa fa-fw fa-power-off"></i> 
+                                Log Out</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

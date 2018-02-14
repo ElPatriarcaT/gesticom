@@ -28,7 +28,7 @@
 
 'use strict';
 
-moduloTipousuario.controller('TipousuarioSelection1Controller',
+moduloTipousuario.controller('TipousuarioSelection2Controller',
         ['$scope', '$uibModalInstance', 'serverCallService', '$location', 'toolService',
             function ($scope, $modalInstance, serverCallService, $location, toolService) {
                 $scope.ob = 'tipousuario';
