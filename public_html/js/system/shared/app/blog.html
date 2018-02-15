@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<menu></menu>
+<div id="wrapper" ng-cloak>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <header ob="ob" op="op"></header>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"><menuperfil></menuperfil>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Crear un nuevo Evento
+                            </div>
+                            <div class="panel-body">
+                                <p><br>
+                                    <a class="btn btn-primary" ng-if="xob" href="{{ob}}/{{profile}}/x{{xob}}/newx/{{xid}}">Crear</a>
+                                    <a class="btn btn-primary" ng-if="!xob" href="{{ob}}/{{profile}}/new">Crear</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                                                    <cplistpagination url="url"
+                                                                      numpage="numpage"
+                                                                      rpp="rpp"
+                                                                      pages="pages"
+                                                                      neighbourhood="neighbourhood"
+                                                                      filterParams="filterParams"
+                                                                      orderParams="orderParams"
+                                                                      sfilterParams="sfilterParams">
+                                                    </cplistpagination>
+                                                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="panel panel-default" ng-repeat="oBean in page| filter:searchText">
+                    <div class="panel-body">
+                        <div id="postlist">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <h3 class="pull-left">{{oBean.titulo}}</h3>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h4 class="pull-right">
+                                                    <small><em>{{oBean.fecha}}</em></small>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    {{oBean.descripcion}}
+                                </div>
+
+                                <div class="panel-footer" ng-if="!xob && !onlyview && !veredit" class="col-md-1">
+                                    <div class="btn-toolbar" role="toolbar">
+                                        <div class="btn-group">
+                                            <a class="btn btn-default btn-xs" title="View" href="{{ob}}/{{profile}}/view/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-eye-open"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-xs" title="Edit" href="{{ob}}/{{profile}}/edit/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </a>
+                                            <a ng-if="showRemove" class="btn btn-default btn-xs" title="Remove" href="{{ob}}/{{profile}}/remove/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer" ng-if="!onlyview && veredit" class="col-md-1">
+                                    <div class="btn-toolbar" role="toolbar">
+                                        <div class="btn-group">
+                                            <a class="btn btn-default btn-xs" title="View" href="{{ob}}/{{profile}}/view/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-eye-open"></span>
+                                            </a>
+                                            <a ng-if="showEdit(oBean); idseve"  class="btn btn-default btn-xs" title="Edit" href="{{ob}}/{{profile}}/edit/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer" ng-if="!xob && onlyview && {{oBean.id}}== session_info.id"  class="col-md-1">
+                                    <div class="btn-toolbar" role="toolbar">
+                                        <div class="btn-group">
+                                            <a class="btn btn-default btn-xs" title="View" href="{{ob}}/{{profile}}/view/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-eye-open"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer" ng-if="xob && !veredit"  class="col-md-1">
+                                    <div class="btn-toolbar" role="toolbar">
+                                        <div class="btn-group">
+                                            <a class="btn btn-default btn-xs" title="View" href="{{ob}}/{{profile}}/view/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-eye-open"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-xs" title="Edit" href="{{ob}}/{{profile}}/x{{xob}}/editx/{{oBean.id}}/{{xid}}">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </a>
+
+                                            <a ng-if="showRemove" class="btn btn-default btn-xs" title="Remove" href="{{ob}}/{{profile}}/remove/{{oBean.id}}">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-footer" style="font-family: Questrial, serif;" ng-include="'js/system/include/footer.html'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

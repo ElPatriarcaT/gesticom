@@ -68,7 +68,6 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/usuario/2/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'UsuarioView2Controller', resolve: {auth: authenticationFalleroPromise}});
         $routeProvider.when('/usuario/2/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'UsuarioNew2Controller', resolve: {auth: authenticationFalleroPromise}});
         $routeProvider.when('/usuario/2/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'UsuarioEdit2Controller', resolve: {auth: authenticationFalleroPromise}});
-        $routeProvider.when('/usuario/2/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'UsuarioRemove2Controller', resolve: {auth: authenticationFalleroPromise}});
         $routeProvider.when('/usuario/2/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'UsuarioPList2Controller', resolve: {auth: authenticationFalleroPromise}});
         
         //------------ TipoUsuario 1
@@ -86,7 +85,12 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/censo/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CensoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/censo/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'CensoRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/censo/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'CensoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
-
+        //------------ Usuario 2
+        $routeProvider.when('/censo/2/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'CensoView2Controller', resolve: {auth: authenticationFalleroPromise}});
+        $routeProvider.when('/censo/2/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CensoNew2Controller', resolve: {auth: authenticationFalleroPromise}});
+        $routeProvider.when('/censo/2/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CensoEdit2Controller', resolve: {auth: authenticationFalleroPromise}});
+        $routeProvider.when('/censo/2/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'CensoPList2Controller', resolve: {auth: authenticationFalleroPromise}});
+        
         //----------- Cargo 1
         $routeProvider.when('/cargo/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'CargoView1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/cargo/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CargoNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
@@ -120,7 +124,7 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/eventos/1/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'EventosNew1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/eventos/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'EventosEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/eventos/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'EventosRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        $routeProvider.when('/eventos/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'EventosPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
+        $routeProvider.when('/eventos/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/blog.html', controller: 'EventosPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
 
         //----------- Recompensa 1
         $routeProvider.when('/recompensa/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'RecompensaView1Controller', resolve: {auth: authenticationAdministratorPromise}});
