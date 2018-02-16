@@ -32,6 +32,10 @@ moduloCenso.controller('CensoPList2Controller',
                 $scope.ob = "censo";
                 $scope.op = "plist";
                 $scope.profile = 2;
+                 //---
+                $scope.idseve = false;
+                $scope.iduser = 0;
+                $scope.veredit = true;
                 //---
                 $scope.url = $scope.ob + '/' + $scope.profile + '/' + $scope.op;
                 //----
@@ -86,6 +90,14 @@ moduloCenso.controller('CensoPList2Controller',
                 };
                 $scope.setShowRemove = function (show) {
                     $scope.showRemove = show;
+                };
+                $scope.showEdit = function (oBean) {
+                    $scope.iduserobean = oBean.id_usuario;
+                    if ($scope.iduserobean == $scope.iduser) {
+                        $scope.idseve = true;
+                    } else {
+                        $scope.idseve = false;
+                    }
                 };
                 
                 getDataFromServer();
