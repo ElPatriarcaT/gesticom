@@ -20,7 +20,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     Author     : rafa
 */
 @charset "UTF-8";
-
 a,
 a label {
     cursor: pointer;
@@ -38,6 +37,7 @@ a label {
 body {
     /* min-height: 2000px; */
     padding-top: 70px;
+    background-image: url("images/LogoFalla.jpeg");
 }
 
 .ui-datepicker{ z-index: 9999 !important;}
@@ -51,7 +51,9 @@ html {
     -webkit-text-size-adjust: 100%; }
 
 body {
-    margin: 0; }
+    margin: 0; 
+    background-image: url("../images/fondo.png");
+    }
 
 article,
 aside,
