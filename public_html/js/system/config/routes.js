@@ -85,11 +85,13 @@ trolleyes.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/censo/1/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CensoEdit1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/censo/1/remove/:id', {templateUrl: 'js/system/shared/app/remove.html', controller: 'CensoRemove1Controller', resolve: {auth: authenticationAdministratorPromise}});
         $routeProvider.when('/censo/1/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'CensoPList1Controller', resolve: {auth: authenticationAdministratorPromise}});
-        //------------ Usuario 2
+        //------------ Censo 2
         $routeProvider.when('/censo/2/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'CensoView2Controller', resolve: {auth: authenticationFalleroPromise}});
         $routeProvider.when('/censo/2/new/:id?', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CensoNew2Controller', resolve: {auth: authenticationFalleroPromise}});
         $routeProvider.when('/censo/2/edit/:id', {templateUrl: 'js/system/shared/app/newedit.html', controller: 'CensoEdit2Controller', resolve: {auth: authenticationFalleroPromise}});
         $routeProvider.when('/censo/2/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plist.html', controller: 'CensoPList2Controller', resolve: {auth: authenticationFalleroPromise}});
+        //------------ Censo 2
+        $routeProvider.when('/censo/3/plist/:page?/:rpp?', {templateUrl: 'js/system/shared/app/plistvisitante.html', controller: 'CensoPList3Controller', resolve: {auth: authenticationVisitantePromise}});
 
         //----------- Cargo 1
         $routeProvider.when('/cargo/1/view/:id', {templateUrl: 'js/system/shared/app/view.html', controller: 'CargoView1Controller', resolve: {auth: authenticationAdministratorPromise}});

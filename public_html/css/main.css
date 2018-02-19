@@ -53,7 +53,7 @@ html {
 body {
     margin: 0; 
     background-image: url("../images/fondo.png");
-    }
+}
 
 article,
 aside,
@@ -103,8 +103,8 @@ dfn {
     font-style: italic; }
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0; }
+    font-size: 6em;
+    margin: 0.67em 0;}
 
 mark {
     background: #ff0;
@@ -1119,7 +1119,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
-    color: #2f575d;
+    color: black;
     background-color: #dee1dd; }
 
 input,
@@ -1532,7 +1532,7 @@ pre {
     line-height: 1.42857;
     word-break: break-all;
     word-wrap: break-word;
-    color: #2f575d;
+    color: black;
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     border-radius: 4px; }
@@ -2243,10 +2243,10 @@ th {
     padding: 8px;
     line-height: 1.42857;
     vertical-align: top;
-    border-top: 1px solid #2f575d; }
+    border-top: 1px solid black; }
 .table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #2f575d; }
+    border-bottom: 2px solid black; }
 .table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > th,
@@ -2268,7 +2268,7 @@ th {
     padding: 5px; }
 
 .table-bordered {
-    border: 1px solid #2f575d; }
+    border: 1px solid black; }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > th,
@@ -2386,7 +2386,7 @@ table th[class*="col-"] {
         margin-bottom: 15px;
         overflow-y: hidden;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid #2f575d; }
+        border: 1px solid black; }
     .table-responsive > .table {
         margin-bottom: 0; }
     .table-responsive > .table > thead > tr > th,
@@ -2431,7 +2431,7 @@ legend {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: inherit;
-    color: #2f575d;
+    color: black;
     border: 0;
     border-bottom: 1px solid #e5e5e5; }
 
@@ -3170,7 +3170,7 @@ tbody.collapse.in {
     clear: both;
     font-weight: normal;
     line-height: 1.42857;
-    color: #2f575d;
+    color: black;
     white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -4263,7 +4263,7 @@ a.badge:hover, a.badge:focus {
         padding-right: 60px; }
     .jumbotron h1,
     .jumbotron .h1 {
-        font-size: 63px; } }
+        font-size: 40px; } }
 
 .thumbnail {
     display: block;
@@ -4285,7 +4285,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
 .thumbnail .caption {
     padding: 9px;
-    color: #2f575d; }
+    color: black; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -4734,7 +4734,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-    border-top: 1px solid #2f575d; }
+    border-top: 1px solid black; }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
     border-top: 0; }
@@ -4809,14 +4809,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default {
     border-color: #ddd; }
 .panel-default > .panel-heading {
-    color: #2f575d;
+    color: black;
     background-color: #f5f5f5;
     border-color: #ddd; }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #ddd; }
 .panel-default > .panel-heading .badge {
     color: #f5f5f5;
-    background-color: #2f575d; }
+    background-color: black; }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ddd; }
 
